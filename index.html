@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Emails</title>
+    <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="dist/spinner.css">
+</head>
+
+<body class="min-h-screen bg-slate-300">
+    <div class="max-w-3xl mx-auto p-10">
+        <h1 class="text-4xl text-gray-700 flex justify-center">
+            Simulador de envío de Emails
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11 16v-5.5A3.5 3.5 0 0 0 7.5 7m3.5 9H4v-5.5A3.5 3.5 0 0 1 7.5 7m3.5 9v4M7.5 7H14m0 0V4h2.5M14 7v3m-3.5 6H20v-6a3 3 0 0 0-3-3m-2 9v4m-8-6.5h1" />
+            </svg>
+        </h1>
+        <div id="cuerpoForm" class="bg-white rounded-lg shadow-xl p-10 mt-5">
+            <form id="formulario" class="space-y-3">
+                <div class="flex flex-col space-y-2">
+                    <label for="email" class="font-regular font-medium">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Email Destino, ej: MarcoParedes@gmail.com"
+                        class="border border-gray-300 px-3 py-2 rounded-lg" />
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                    <label for="asunto" class="font-regular font-medium">Asunto:</label>
+                    <input id="asunto" type="text" name="asunto" placeholder="Escribe el asunto"
+                        class="border border-gray-300 px-3 py-2 rounded-lg" />
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                    <label for="mensaje" class="font-regular font-medium">Mensaje:</label>
+                    <textarea id="mensaje" type="text" name="mensaje" placeholder="Escribe el mensaje"
+                        class="border border-gray-300 px-3 py-2 rounded-lg h-36 hover:margin-red-500"></textarea>
+                </div>
+
+                <div id="botones" class="flex gap-5">
+                    <button type="submit"
+                        class="flex-1 bg-pink-600 text-white flex justify-center gap-2 items-center p-3 opacity-50"
+                        disabled>
+                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.153 19 21 12l-4.847-7H3l4.848 7L3 19h13.153Z" />
+                        </svg>
+                        Enviar
+                    </button>
+                    <button class="flex-1 bg-gray-800 text-white flex justify-center gap-2 items-center p-3"
+                        type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            class="w-6 h-6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                        </svg>
+                        Reset
+                    </button>
+                </div>
+            </form>
+            <template>
+                <div class="sk-circle">
+                    <div class="sk-circle1 sk-child"></div>
+                    <div class="sk-circle2 sk-child"></div>
+                    <div class="sk-circle3 sk-child"></div>
+                    <div class="sk-circle4 sk-child"></div>
+                    <div class="sk-circle5 sk-child"></div>
+                    <div class="sk-circle6 sk-child"></div>
+                    <div class="sk-circle7 sk-child"></div>
+                    <div class="sk-circle8 sk-child"></div>
+                    <div class="sk-circle9 sk-child"></div>
+                    <div class="sk-circle10 sk-child"></div>
+                    <div class="sk-circle11 sk-child"></div>
+                    <div class="sk-circle12 sk-child"></div>
+                </div>
+            </template>
+        </div>
+    </div>
+    <footer class="text-center text-white">
+        <p>Herramientas utilizadas: HTML - CSS - JAVASCRIPT - TAILWIND</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
